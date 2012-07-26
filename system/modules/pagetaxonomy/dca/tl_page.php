@@ -41,10 +41,10 @@ $GLOBALS['TL_DCA']['tl_page']['palettes']['regular'] = str_replace(',noSearch;',
 $GLOBALS['TL_DCA']['tl_page']['fields']['taxonomyid'] = array (
 	'label'				=> &$GLOBALS['TL_LANG']['tl_page']['taxonomyid']
 ,	'exclude'			=> true
-,	'inputType'			=> 'select'
+,	'inputType'			=> 'checkbox'
 ,	'options_callback'	=> array('tl_page_taxonomyid', 'tl_page_taxonomyid')
 ,	'reference'			=> &$GLOBALS['TL_LANG']['MSC']['sitemap_changefreq']
-,	'eval'				=> array('includeBlankOption'=>true, 'tl_class'=>'w50')
+,	'eval'				=> array( 'includeBlankOption'=>true, 'multiple'=>true )
 );
 
 

@@ -12,7 +12,7 @@
 -- 
 
 CREATE TABLE `tl_page` (
-  `taxonomyid` varchar(5) NOT NULL default '',
+  `taxonomyid` varchar(255) NOT NULL default '',
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 
